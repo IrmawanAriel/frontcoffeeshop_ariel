@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Order</title>
+    <link rel="stylesheet" href="/styles/tailwind.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="flex flex-row justify-between items-center py-4 px-16 bg-black sticky top-0 hidden md:flex ">
+            <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-row gap-4">
+                    <img class="itemLogo" src="/images/logoCoffee.png" alt="logoCoffee" />
+                    <img class="itemTulisanCoffee" src="/images/coffeeShop.png" alt="" />
+                </div>
+
+                <div class="flex flex-row text-white gap-4">
+                    <a href="#">Home</a>
+                    <a href="#">Product</a>
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 items-center text-white">
+                <div class="flex flex-row gap-4">
+                    <a href="#" class="searchButton">
+                        <img class="w-4" src="/icons/search.png" alt="" />
+                    </a>
+                    <a href="#" class="shopingCartItem">
+                        <img class="w-4" src="/icons/shopingcart.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="border-2 border-white p-4 rounded">
+                    <button>Sign In</button>
+                </div>
+
+                <div class="border-2 border-oren p-4 bg-oren rounded">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class=" py-2 px-4 bg-black items-center sticky top-0  md:hidden ">
+
+            <div
+                class="relative inline-block flex flex-row justify-between items-center py-2 px-4 bg-black sticky top-0  md:hidden ">
+                <div class="flex flex-row gap-4">
+                    <img class="itemLogo h-8" src="/images/logoCoffee.png" alt="logoCoffee" />
+                    <img class="itemTulisanCoffee h-8" src="/images/coffeeShop.png" alt="" />
+                </div>
+                <div>
+                    <div>
+                        <button type="button"
+                            class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            <svg width="16px" height="16px" viewBox="0 0 24 24" id="three-dots" xmlns="http://www.w3.org/2000/svg">
+                                <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey" transform="translate(24) rotate(90)">
+                                  <rect id="Rectangle" width="24" height="24" fill="none"/>
+                                  <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)" stroke="#000000" stroke-miterlimit="10" stroke-width="0.5"/>
+                                  <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(11 11)" stroke="#000000" stroke-miterlimit="10" stroke-width="0.5"/>
+                                  <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" transform="translate(17 11)" stroke="#000000" stroke-miterlimit="10" stroke-width="0.5"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bg-white absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-black"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                id="menu-item-0">Home</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                id="menu-item-1">Product</a>
+                        </div>
+                        <div class="py-1  " role="none">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 flex flex-row" role="menuitem"
+                                tabindex="-1" id="menu-item-2"><img class="h-4 w-4" src="/icons/search.png" alt="" />
+                                Search </a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 flex flex-row" role="menuitem"
+                                tabindex="-1" id="menu-item-3"><img class="h-4 w-4" src="/icons/shopingcart.png"
+                                    alt="" /> Shooping Cart</a>
+                        </div>
+                        <div class="py-1" role="none">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                id="menu-item-4"><button>Sign In</button></a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                id="menu-item-5"><button>Sign Up</button></a>
+                        </div>
+                        <div class="py-1" role="none">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                id="menu-item-6">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="p-8 ">
+
+        <div class="flex flex-col gap-2 px-4">
+            <div class="gap-2 text-wrap text-3xl flex flex-row ">
+                <p class="font-semibold ">Order</p> 
+                <p class="font-bold">#12354-09893</p>
+            </div>
+            <p class="text-xl text-gray-400">21 March 2023 at 10:30 AM</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-4 p-4">
+            <div class="flex flex-col gap-4 basis-2/4 max-w-full max-h-fit">
+                <p class="text-2xl font-medium ">Order Information</p>
+
+                <div class=" w-full  bg-gray-100">
+                    <div class="flex-col flex gap-4 p-4">
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center">
+                                <img class="h-6 w-auto  " src="../icons/Fullname2.png" alt="">
+                                <div class="font-normal text-xl">Fullname</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2">Galuh wizard</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center ">
+                                <img class="h-6 w-auto  " src="../icons/Location.png" alt="">
+                                <div class="font-normal text-xl">Address</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2">Griya bandung indah</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center">
+                                <img class="h-6 w-auto  " src="../icons/telephone.png" alt="">
+                                <div class="font-normal text-xl">Phone</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2">08771231235</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center">
+                                <img class="h-6 w-auto  " src="../icons/postcard.png" alt="">
+                                <div class="font-normal text-xl">Payment Method</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2">Cash</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center">
+                                <img class="h-6 w-auto  " src="../icons/truck.png" alt="">
+                                <div class="font-normal text-xl">shiping</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2">Dine In</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between border-b-2	p-2">
+                            <div class="flex flex-row gap-2 items-center">
+                                <img class="h-6 w-auto  " src="../icons/status.png" alt="">
+                                <div class="font-normal text-xl">Status</div>
+                            </div>
+                            <div class="font-semibold text-xl mb-2 border-2 border-lime-500	rounded-3xl bg-lime-300 px-4 py-2">Done</div>
+                        </div>
+
+                        <div class="flex-row flex  justify-between	py-4">
+                            <div class="font-normal text-xl">Total Transaksi</div>
+                            <div class="font-semibold text-xl mb-2 text-oren">IDR 40.000</div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+           
+            <div class="flex flex-col gap-4 basis-2/4 max-w-full max-h-fit">
+                <p class="text-2xl font-medium ">Your Order</p>
+                <div class="flex flex-row gap-4 items-center bg-gray-100">
+                    <div class="foto basis-1/3 p-4">
+                        <img class="w-auto h-fit" src="/images/p2.png" alt="Sunset in the mountains">
+                    </div>
+    
+                    <div class="2/3 flex flex-row">
+                        <div class="flex flex-col gap-4">
+                            <div class="text-white  text-xl bg-red-700 border-2 rounded-3xl w-fit p-2">Flash Sale!
+                            </div>
+                            
+                            <div class="font-bold text-xl ">Hazelnut Latte</div>
+
+                            <div class=" text-xl text-gray-400	">2 pcs | Regular | Ice | Dine In</div>
+    
+                            <div class="price flex flex-row gap-2">
+                                <div class="first-price line-through text-red-800	">
+                                    <p>40.000</p>
+                                </div>
+                                <div class="discount-price text-2xl text-[#FF8906]">
+                                    <p>IDR 10.000</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-4 items-center bg-gray-100">
+                    <div class="foto basis-1/3 p-4">
+                        <img class="w-auto h-fit" src="/images/p2.png" alt="Sunset in the mountains">
+                    </div>
+    
+                    <div class="2/3">
+                        <div class="flex flex-col gap-4">
+                            <div class="text-white text-xl bg-red-700 border-2 rounded-3xl w-fit p-2">Flash Sale!
+                            </div>
+
+                            <div class="font-bold text-xl ">Hazelnut Latte</div>
+
+                            <div class=" text-xl text-gray-400	">2 pcs | Regular | Ice | Dine In</div>
+    
+                            <div class="price flex flex-row gap-2">
+                                <div class="first-price line-through text-red-800	">
+                                    <p>40.000</p>
+                                </div>
+                                <div class="discount-price text-2xl text-[#FF8906]">
+                                    <p>IDR 10.000</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="tulisan bg-[#F8F8F8] w-full  ">
+
+        <section class="flex flex-wrap gap-4 p-4 md:flex-row md:px-32 md:gap-x-12 py-16">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-row gap-4">
+                    <img class="itemLogo h-6" src="/images/logoCoffee.png" alt="logoCoffee" />
+                    <img class="itemTulisanCoffee h-6" src="/images/coffeeShop.png" alt="" />
+                </div>
+
+                <div>
+                    <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality
+                        beans</p>
+                </div>
+
+                <div class="text-gray-400">
+                    ©2020CoffeeStore
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="text-xl	font-medium	">Product</h3>
+                <a href="">Our Product</a>
+                <a href="">Pricing</a>
+                <a href="">Location</a>
+                <a href="">Country</a>
+                <a href="">Blog</a>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="text-xl	font-medium	">Engage</h3>
+                <a href="">Our Product</a>
+                <a href="">Pricing</a>
+                <a href="">Location</a>
+                <a href="">Country</a>
+                <a href="">Blog</a>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="text-xl	font-medium	">Social Media</h3>
+                <div class="flex flex-wrap md:flex-row gap-4 justify-between items-center  ">
+
+                    <a href="">
+                        <img class="h-6" src="/icons/FbBlack.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img class="h-6" src="/icons/TweeterBlack.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img class="h-6" src="/icons/INstaBlack.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu-button");
+  const dropdownMenu = document.querySelector(".absolute[aria-labelledby='menu-button']");
+
+  menuButton.addEventListener("click", function () {
+    dropdownMenu.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+      dropdownMenu.classList.add("hidden");
+    }
+  });
+});
+</script>
+
+</html>
